@@ -13,6 +13,8 @@
 		FDDD3B0B2B9D952F005D410F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDD3B0A2B9D952F005D410F /* Preview Assets.xcassets */; };
 		FDDD3B142B9EEB44005D410F /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */; };
 		FDDD3B182B9F0C6B005D410F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B172B9F0C6B005D410F /* Data.swift */; };
+		FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1B2B9F14B6005D410F /* MessageView.swift */; };
+		FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1D2B9F1754005D410F /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FDDD3B0A2B9D952F005D410F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		FDDD3B172B9F0C6B005D410F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FDDD3B1B2B9F14B6005D410F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		FDDD3B1D2B9F1754005D410F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		FDDD3B022B9D952C005D410F /* DesignCode */ = {
 			isa = PBXGroup;
 			children = (
+				FDDD3B172B9F0C6B005D410F /* Data.swift */,
 				FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */,
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
+				FDDD3B1B2B9F14B6005D410F /* MessageView.swift */,
+				FDDD3B1D2B9F1754005D410F /* MenuView.swift */,
 				FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */,
 				FDDD3B072B9D952F005D410F /* Assets.xcassets */,
 				FDDD3B092B9D952F005D410F /* Preview Content */,
-				FDDD3B172B9F0C6B005D410F /* Data.swift */,
 			);
 			path = DesignCode;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
+				FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */,
 				FDDD3B142B9EEB44005D410F /* NavigationStackView.swift in Sources */,
 				FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */,
 				FDDD3B182B9F0C6B005D410F /* Data.swift in Sources */,
+				FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
