@@ -20,6 +20,7 @@
 		FDDD3B242BA036F1005D410F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B232BA036F1005D410F /* CardView.swift */; };
 		FDDD3B262BA051CB005D410F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B252BA051CB005D410F /* DetailView.swift */; };
 		FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */; };
+		FDDD3B2A2BA099FE005D410F /* CardReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B292BA099FE005D410F /* CardReflectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FDDD3B232BA036F1005D410F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FDDD3B252BA051CB005D410F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
+		FDDD3B292BA099FE005D410F /* CardReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReflectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */,
 				FDDD3B252BA051CB005D410F /* DetailView.swift */,
 				FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */,
+				FDDD3B292BA099FE005D410F /* CardReflectionView.swift */,
 				FDDD3B232BA036F1005D410F /* CardView.swift */,
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
@@ -175,6 +178,7 @@
 				FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */,
 				FDDD3B182B9F0C6B005D410F /* Data.swift in Sources */,
 				FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */,
+				FDDD3B2A2BA099FE005D410F /* CardReflectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
