@@ -10,10 +10,13 @@ import SwiftUI
 struct RadialLayoutView: View {
     var icons = ["calendar", "message", "figure.walk", "music.note"]
     var numbers = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    @State var isRadial = true
 
     var body: some View {
+        let layout = isRadial ? AnyLayout(RadialLayout()) : AnyLayout(CustomLayout())
+
         ZStack {
-            RadialLayout {
+            layout {
                 ForEach(icons, id: \.self) { item in
                     Circle()
                         .frame(width: 44)
@@ -23,20 +26,22 @@ struct RadialLayoutView: View {
             }
             .frame(width: 120)
 
-            RadialLayout {
+            layout {
                 ForEach(numbers, id: \.self) { item in
                     Text("\(item)")
                         .font(.system(.title, design: .rounded).bold())
                     .foregroundColor(.black)
+                    .offset(x: isRadial ? 0 : 50)
                 }
             }
             .frame(width: 240)
 
-            RadialLayout {
+            layout {
                 ForEach(numbers, id: \.self) { item in
                     Text("\(item * 5)")
                         .font(.system(.caption, design: .rounded))
                     .foregroundColor(.black)
+                    .offset(x: isRadial ? 0 : 100)
                 }
             }
             .frame(width: 360)
@@ -44,6 +49,11 @@ struct RadialLayoutView: View {
             Circle()
                 .strokeBorder(style: StrokeStyle(lineWidth: 10, dash: [1, 10]))
                 .frame(width: 220)
+        }
+        .onTapGesture {
+            withAnimation(.spring()) {
+                isRadial.toggle()
+            }
         }
     }
 }
@@ -60,7 +70,7 @@ struct CustomLayout: Layout {
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         for (index, subviews) in subviews.enumerated() {
             // Position
-            var point = CGPoint(x: 50 * index, y: 50 * index).applying(CGAffineTransform(rotationAngle: 5))
+            var point = CGPoint(x: 20 * index, y: 20 * index).applying(CGAffineTransform(rotationAngle: CGFloat(6 * index + 6)))
 
             //Center
             point.x += bounds.midX
