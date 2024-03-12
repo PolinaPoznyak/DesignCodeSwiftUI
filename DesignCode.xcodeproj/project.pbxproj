@@ -16,6 +16,7 @@
 		FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1B2B9F14B6005D410F /* MessageView.swift */; };
 		FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1D2B9F1754005D410F /* MenuView.swift */; };
 		FDDD3B202B9F3E1F005D410F /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */; };
+		FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B212B9F4FF7005D410F /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FDDD3B1B2B9F14B6005D410F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		FDDD3B1D2B9F1754005D410F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		FDDD3B212B9F4FF7005D410F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */,
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
+				FDDD3B212B9F4FF7005D410F /* GridView.swift */,
 				FDDD3B1B2B9F14B6005D410F /* MessageView.swift */,
 				FDDD3B1D2B9F1754005D410F /* MenuView.swift */,
 				FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */,
@@ -154,6 +157,7 @@
 			files = (
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
 				FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */,
+				FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */,
 				FDDD3B142B9EEB44005D410F /* NavigationStackView.swift in Sources */,
 				FDDD3B202B9F3E1F005D410F /* ChartView.swift in Sources */,
 				FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */,
