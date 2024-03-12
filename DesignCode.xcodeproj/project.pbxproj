@@ -19,6 +19,7 @@
 		FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B212B9F4FF7005D410F /* GridView.swift */; };
 		FDDD3B242BA036F1005D410F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B232BA036F1005D410F /* CardView.swift */; };
 		FDDD3B262BA051CB005D410F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B252BA051CB005D410F /* DetailView.swift */; };
+		FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FDDD3B212B9F4FF7005D410F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		FDDD3B232BA036F1005D410F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FDDD3B252BA051CB005D410F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				FDDD3B172B9F0C6B005D410F /* Data.swift */,
 				FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */,
 				FDDD3B252BA051CB005D410F /* DetailView.swift */,
+				FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */,
 				FDDD3B232BA036F1005D410F /* CardView.swift */,
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
@@ -164,6 +167,7 @@
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
 				FDDD3B242BA036F1005D410F /* CardView.swift in Sources */,
 				FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */,
+				FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */,
 				FDDD3B262BA051CB005D410F /* DetailView.swift in Sources */,
 				FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */,
 				FDDD3B142B9EEB44005D410F /* NavigationStackView.swift in Sources */,
