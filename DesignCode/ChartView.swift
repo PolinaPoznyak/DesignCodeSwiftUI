@@ -27,6 +27,7 @@ struct ChartView: View {
             }
         }
         .frame(height: 300)
+        .padding(20)
     }
 }
 
