@@ -10,6 +10,7 @@ import SwiftUI
 struct ActionButtonView: View {
     @State var show = false
     @State var translation: CGSize = .zero
+    @ObservedObject var manager = MotionManager()
 
     var drag: some Gesture {
         DragGesture()
@@ -29,8 +30,8 @@ struct ActionButtonView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(50)
+                .overlay(motion)
                 .scaleEffect(show ? 0.95 : 1)
-                .blur(radius: show ? 5 : 0)
             Rectangle()
                 .fill(.ultraThinMaterial)
                 .overlay(Rectangle().fill(.black.opacity(0.5).blendMode(.overlay)))
@@ -60,6 +61,17 @@ struct ActionButtonView: View {
         .background(.black)
         .ignoresSafeArea()
         .preferredColorScheme(.dark)
+    }
+
+    var motion: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 50).stroke(.linearGradient(colors: [.white.opacity(0.2), .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) + 1, y: abs(manager.roll) + 1)))
+            LinearGradient(colors: [.clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) + 1, y: abs(manager.roll) + 1))
+            LinearGradient(colors: [Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .blendMode(.softLight)
+        }
+        .cornerRadius(50)
+        .opacity(show ? 1 : 0)
     }
 
     var circle: some View {

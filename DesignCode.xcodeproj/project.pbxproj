@@ -22,6 +22,7 @@
 		FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */; };
 		FDDD3B2A2BA099FE005D410F /* CardReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B292BA099FE005D410F /* CardReflectionView.swift */; };
 		FDDD3B2C2BA0B238005D410F /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */; };
+		FDDD3B2E2BA16D5C005D410F /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
 		FDDD3B292BA099FE005D410F /* CardReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReflectionView.swift; sourceTree = "<group>"; };
 		FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */,
+				FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */,
 				FDDD3B172B9F0C6B005D410F /* Data.swift */,
 				FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */,
 				FDDD3B252BA051CB005D410F /* DetailView.swift */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
+				FDDD3B2E2BA16D5C005D410F /* MotionManager.swift in Sources */,
 				FDDD3B242BA036F1005D410F /* CardView.swift in Sources */,
 				FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */,
 				FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */,
