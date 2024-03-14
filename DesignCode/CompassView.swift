@@ -16,6 +16,7 @@ struct CompassView: View {
             background
             outerCircles
             innerCircles
+            waypoints
             flashlight
             circleLabel
             strokes
@@ -35,6 +36,23 @@ struct CompassView: View {
             }
     }
 
+    var waypoints: some View {
+        ZStack {
+            Circle()
+                .fill(.blue)
+                .frame(width: 16)
+                .offset(x: 100, y: 210)
+            Circle()
+                .fill(.red)
+                .frame(width: 16)
+                .offset(x: -120, y: -200)
+            Circle()
+                .fill(.green)
+                .frame(width: 16)
+                .offset(x: 100, y: -150)
+        }
+    }
+
     var flashlight: some View {
         GeometryReader { proxy in
             ZStack {
@@ -42,6 +60,46 @@ struct CompassView: View {
                     .fill(.radialGradient(colors: [.white.opacity(0.1), .clear], center: .center, startRadius: 0, endRadius: 200))
                     .offset(x: location.x-proxy.size.width/2, y: location.y-proxy.size.height/2)
                     .opacity(isDragging ? 1 : 0)
+                Circle()
+                    .fill(.radialGradient(colors: [.white, .clear], center: .center, startRadius: 0, endRadius: 200))
+                    .offset(x: location.x-proxy.size.width/2, y: location.y-proxy.size.height/2)
+                    .opacity(isDragging ? 1 : 0)
+                    .mask(
+                        ZStack {
+                            Circle().stroke().scaleEffect(1.2)
+                            Circle().stroke().scaleEffect(1.5)
+                            Circle().stroke().padding(20)
+                            Circle().stroke().padding(80)
+                            Circle().stroke().padding(100)
+                            Circle().stroke().padding(120)
+                            Circle().stroke().padding(145)
+                            Circle().stroke().padding(170)
+                            Group {
+                                Text("Home")
+                                    .offset(x: 0, y: -210)
+                                    .rotationEffect(.degrees(-31))
+                                Text("Tent")
+                                    .rotationEffect(.degrees(35))
+                                    .offset(x: 115, y: -170)
+                                Text("Parked Car")
+                                    .rotationEffect(.degrees(150))
+                                    .offset(x: 80, y: 190)
+                                Text("N")
+                                    .rotationEffect(.degrees(0))
+                                    .offset(x: 0, y: -135)
+                                Text("E")
+                                    .rotationEffect(.degrees(90))
+                                    .offset(x: 135, y: 0)
+                                Text("S")
+                                    .rotationEffect(.degrees(180))
+                                    .offset(x: 0, y: 135)
+                                Text("W")
+                                    .rotationEffect(.degrees(270))
+                                    .offset(x: -135, y: 0)
+                            }
+                        }
+                            .frame(width: 393)
+                    )
             }
             .frame(
                 width: proxy.frame(in: .global).width,
