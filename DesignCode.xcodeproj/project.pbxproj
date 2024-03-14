@@ -24,6 +24,7 @@
 		FDDD3B2C2BA0B238005D410F /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */; };
 		FDDD3B2E2BA16D5C005D410F /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */; };
 		FDDD3B302BA18723005D410F /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B2F2BA18723005D410F /* CompassView.swift */; };
+		FDDD3B322BA1A9BA005D410F /* CircleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B312BA1A9BA005D410F /* CircleLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		FDDD3B2F2BA18723005D410F /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		FDDD3B312BA1A9BA005D410F /* CircleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */,
 				FDDD3B292BA099FE005D410F /* CardReflectionView.swift */,
 				FDDD3B232BA036F1005D410F /* CardView.swift */,
+				FDDD3B312BA1A9BA005D410F /* CircleLabelView.swift */,
 				FDDD3B2F2BA18723005D410F /* CompassView.swift */,
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
@@ -189,6 +192,7 @@
 				FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */,
 				FDDD3B182B9F0C6B005D410F /* Data.swift in Sources */,
 				FDDD3B302BA18723005D410F /* CompassView.swift in Sources */,
+				FDDD3B322BA1A9BA005D410F /* CircleLabelView.swift in Sources */,
 				FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */,
 				FDDD3B2A2BA099FE005D410F /* CardReflectionView.swift in Sources */,
 			);
@@ -324,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
+				DEVELOPMENT_TEAM = 44QKC3G3VD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = DesignCode;
@@ -338,7 +343,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DesignCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DesignCodeNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,6 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
+				DEVELOPMENT_TEAM = 44QKC3G3VD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = DesignCode;
@@ -368,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DesignCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DesignCodeNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
