@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct CompassView: View {
     @State var location: CGPoint = .zero
     @State var isDragging = false
+    @ObservedObject var locationManager = LocationManager()
 
     var body: some View {
         ZStack {
@@ -17,10 +19,13 @@ struct CompassView: View {
             outerCircles
             innerCircles
             waypoints
+                .rotationEffect(.degrees(locationManager.degrees))
             flashlight
             circleLabel
             strokes
+                .rotationEffect(.degrees(locationManager.degrees))
             light
+            title
         }
         .gesture(drag)
     }
@@ -34,6 +39,27 @@ struct CompassView: View {
             .onEnded { value in
                 isDragging = false
             }
+    }
+
+    var title: some View {
+        VStack {
+            Text("\(String(format: "%.0f", locationManager.degrees))° \(compassDirection(locationManager.degrees))")
+                .font(.largeTitle)
+            Text("San Francisco".uppercased())
+                .font(.footnote)
+            if let myLocation = locationManager.location {
+                Text("Latitude: \(myLocation.latitude.formatted(.number.precision(.fractionLength(2)))), Longitude: \(myLocation.longitude.formatted(.number.precision(.fractionLength(2))))")
+            } else {
+                LocationButton {
+                    locationManager.requestLocation()
+                }
+                .labelStyle(.iconOnly)
+                .cornerRadius(20)
+            }
+        }
+        .fontWeight(.medium)
+        .foregroundColor(.white)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
 
     var waypoints: some View {
@@ -97,6 +123,7 @@ struct CompassView: View {
                                     .rotationEffect(.degrees(270))
                                     .offset(x: -135, y: 0)
                             }
+                            .rotationEffect(.degrees(locationManager.degrees))
                         }
                             .frame(width: 393)
                     )

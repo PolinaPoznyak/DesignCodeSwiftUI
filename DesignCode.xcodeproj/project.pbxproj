@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */; };
 		FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */; };
 		FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B052B9D952C005D410F /* ContentView.swift */; };
 		FDDD3B082B9D952F005D410F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDD3B072B9D952F005D410F /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDDD3B002B9D952C005D410F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeApp.swift; sourceTree = "<group>"; };
 		FDDD3B052B9D952C005D410F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
 				FDDD3B212B9F4FF7005D410F /* GridView.swift */,
+				FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */,
 				FDDD3B1B2B9F14B6005D410F /* MessageView.swift */,
 				FDDD3B1D2B9F1754005D410F /* MenuView.swift */,
 				FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */,
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
+				FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */,
 				FDDD3B2E2BA16D5C005D410F /* MotionManager.swift in Sources */,
 				FDDD3B242BA036F1005D410F /* CardView.swift in Sources */,
 				FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */,
@@ -332,6 +336,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = DesignCode;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use longitude and latitude for Compass App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +368,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = DesignCode;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use longitude and latitude for Compass App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
