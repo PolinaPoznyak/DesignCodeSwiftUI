@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */; };
+		FDB0D0FE2BA4818200DFC06D /* CompassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */; };
 		FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */; };
 		FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B052B9D952C005D410F /* ContentView.swift */; };
 		FDDD3B082B9D952F005D410F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDD3B072B9D952F005D410F /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassSheet.swift; sourceTree = "<group>"; };
 		FDDD3B002B9D952C005D410F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeApp.swift; sourceTree = "<group>"; };
 		FDDD3B052B9D952C005D410F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FDB0D0FF2BA4A75700DFC06D /* Compass */ = {
+			isa = PBXGroup;
+			children = (
+				FDDD3B2F2BA18723005D410F /* CompassView.swift */,
+				FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */,
+				FDDD3B312BA1A9BA005D410F /* CircleLabelView.swift */,
+				FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */,
+			);
+			path = Compass;
+			sourceTree = "<group>";
+		};
 		FDDD3AF72B9D952C005D410F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 		FDDD3B022B9D952C005D410F /* DesignCode */ = {
 			isa = PBXGroup;
 			children = (
+				FDB0D0FF2BA4A75700DFC06D /* Compass */,
 				FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */,
 				FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */,
 				FDDD3B172B9F0C6B005D410F /* Data.swift */,
@@ -89,12 +103,9 @@
 				FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */,
 				FDDD3B292BA099FE005D410F /* CardReflectionView.swift */,
 				FDDD3B232BA036F1005D410F /* CardView.swift */,
-				FDDD3B312BA1A9BA005D410F /* CircleLabelView.swift */,
-				FDDD3B2F2BA18723005D410F /* CompassView.swift */,
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
 				FDDD3B212B9F4FF7005D410F /* GridView.swift */,
-				FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */,
 				FDDD3B1B2B9F14B6005D410F /* MessageView.swift */,
 				FDDD3B1D2B9F1754005D410F /* MenuView.swift */,
 				FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */,
@@ -184,6 +195,7 @@
 			files = (
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
 				FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */,
+				FDB0D0FE2BA4818200DFC06D /* CompassSheet.swift in Sources */,
 				FDDD3B2E2BA16D5C005D410F /* MotionManager.swift in Sources */,
 				FDDD3B242BA036F1005D410F /* CardView.swift in Sources */,
 				FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */,

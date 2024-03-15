@@ -11,21 +11,33 @@ import CoreLocationUI
 struct CompassView: View {
     @State var location: CGPoint = .zero
     @State var isDragging = false
+    @State var show = false
     @ObservedObject var locationManager = LocationManager()
 
     var body: some View {
         ZStack {
             background
             outerCircles
+                .rotation3DEffect(.degrees(show ? 26 : 0), axis: (x: 1.0, y: 0.0, z: 0.0))
             innerCircles
+                .rotation3DEffect(.degrees(show ? 15 : 0), axis: (x: 1.0, y: 0.0, z: 0.0))
             waypoints
                 .rotationEffect(.degrees(locationManager.degrees))
-            flashlight
+                .scaleEffect(show ? 0.9 : 1)
+            if !show { flashlight }
             circleLabel
+                .rotation3DEffect(.degrees(show ? 10 : 0), axis: (x: 1.0, y: 0.0, z: 0.0))
             strokes
                 .rotationEffect(.degrees(locationManager.degrees))
+                .rotation3DEffect(.degrees(show ? 10 : 0), axis: (x: 1.0, y: 0.0, z: 0.0))
             light
             title
+            sheet.animation(.easeOut(duration: 0.5), value: show)
+        }
+        .onTapGesture {
+            withAnimation {
+                show.toggle()
+            }
         }
         .gesture(drag)
     }
@@ -39,6 +51,13 @@ struct CompassView: View {
             .onEnded { value in
                 isDragging = false
             }
+    }
+
+    var sheet: some View {
+        CompassSheet()
+            .background(.ultraThinMaterial)
+            .cornerRadius(50)
+            .offset(y: show ? 340 : 1000)
     }
 
     var title: some View {
@@ -198,8 +217,8 @@ struct CompassView: View {
 
     var outerCircles: some View {
         ZStack {
-            outerCircle.scaleEffect(1.2)
-            outerCircle.scaleEffect(1.5)
+            outerCircle.scaleEffect(show ? 1.5 : 1.2)
+            outerCircle.scaleEffect(show ? 2 : 1.5)
         }
         .frame(width: 393)
     }
