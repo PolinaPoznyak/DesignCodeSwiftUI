@@ -12,6 +12,7 @@ struct ActionButtonView: View {
     @State var translation: CGSize = .zero
     @ObservedObject var manager = MotionManager()
 
+    // MARK: - gesture
     var drag: some Gesture {
         DragGesture()
             .onChanged { value in
@@ -24,6 +25,7 @@ struct ActionButtonView: View {
             }
     }
 
+    // MARK: - body
     var body: some View {
         ZStack {
             Image("UI 1")
@@ -63,6 +65,7 @@ struct ActionButtonView: View {
         .preferredColorScheme(.dark)
     }
 
+    // MARK: - motion
     var motion: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 50).stroke(.linearGradient(colors: [.white.opacity(0.2), .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) + 1, y: abs(manager.roll) + 1)))
@@ -74,6 +77,7 @@ struct ActionButtonView: View {
         .opacity(show ? 1 : 0)
     }
 
+    // MARK: - elements
     var circle: some View {
         Circle().stroke().fill(LinearGradient(colors: [.white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
     }

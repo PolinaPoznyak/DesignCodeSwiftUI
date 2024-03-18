@@ -14,6 +14,19 @@ struct CompassView: View {
     @State var show = false
     @ObservedObject var locationManager = LocationManager()
 
+    // MARK: - gesture
+    var drag: some Gesture {
+        DragGesture()
+            .onChanged { value in
+                location = value.location
+                isDragging = true
+            }
+            .onEnded { value in
+                isDragging = false
+            }
+    }
+
+    // MARK: - body
     var body: some View {
         ZStack {
             background
@@ -40,17 +53,6 @@ struct CompassView: View {
             }
         }
         .gesture(drag)
-    }
-
-    var drag: some Gesture {
-        DragGesture()
-            .onChanged { value in
-                location = value.location
-                isDragging = true
-            }
-            .onEnded { value in
-                isDragging = false
-            }
     }
 
     var sheet: some View {

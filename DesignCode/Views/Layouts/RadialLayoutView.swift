@@ -14,6 +14,7 @@ struct RadialLayoutView: View {
     @State var hour: Double = 0
     @State var minute: Double = 0
 
+    // MARK: - body
     var body: some View {
         let layout = isRadial ? AnyLayout(RadialLayout()) : AnyLayout(CustomLayout())
 
@@ -71,6 +72,7 @@ struct RadialLayoutView: View {
         }
     }
 
+    // MARK: - clock parts
     var clockHands: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 4)
@@ -125,46 +127,4 @@ struct RadialLayoutView: View {
 
 #Preview {
     RadialLayoutView()
-}
-
-struct CustomLayout: Layout {
-    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
-        proposal.replacingUnspecifiedDimensions()
-    }
-    
-    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
-        for (index, subviews) in subviews.enumerated() {
-            // Position
-            var point = CGPoint(x: 20 * index, y: 20 * index).applying(CGAffineTransform(rotationAngle: CGFloat(6 * index + 6)))
-
-            //Center
-            point.x += bounds.midX
-            point.y += bounds.midY
-
-            subviews.place(at: point, anchor: .center, proposal: .unspecified)
-        }
-    }
-}
-
-struct RadialLayout: Layout {
-    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
-        proposal.replacingUnspecifiedDimensions()
-    }
-    
-    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
-
-        let raduis = bounds.width / 3.0
-        let angle = Angle.degrees(360.0 / Double(subviews.count)).radians
-
-        for (index, subviews) in subviews.enumerated() {
-            // Position
-            var point = CGPoint(x: 0, y: -raduis).applying(CGAffineTransform(rotationAngle: angle * Double(index)))
-
-            //Center
-            point.x += bounds.midX
-            point.y += bounds.midY
-
-            subviews.place(at: point, anchor: .center, proposal: .unspecified)
-        }
-    }
 }

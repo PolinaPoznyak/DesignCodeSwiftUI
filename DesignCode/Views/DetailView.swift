@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
+
     var body: some View {
         ScrollView {
             Text("12 transactions".uppercased())

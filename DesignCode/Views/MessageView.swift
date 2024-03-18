@@ -12,6 +12,7 @@ struct MessageView: View {
     @State var showMessage = true
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
 
+    // MARK: body
     var body: some View {
         content
             .opacity(showMessage ? 1 : 0)
@@ -23,6 +24,7 @@ struct MessageView: View {
             .dynamicTypeSize(.xLarge ... .xxxLarge)
     }
 
+    // MARK: - content
     var content: some View {
         VStack(alignment: .center, spacing: 20.0) {
             Image(systemName: "timelapse", variableValue: time)
@@ -71,7 +73,7 @@ struct MessageView: View {
         .frame(maxWidth: 500)
     }
 
-    
+    // MARK: - stroke
     var stroke: some View {
         RoundedRectangle(cornerRadius: 10)
             .stroke()

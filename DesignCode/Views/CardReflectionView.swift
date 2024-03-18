@@ -11,6 +11,7 @@ struct CardReflectionView: View {
     @State var translation: CGSize = .zero
     @State var isDragging = false
 
+    // MARK: - gesture
     var drag: some Gesture {
         DragGesture()
             .onChanged { value in
@@ -25,6 +26,7 @@ struct CardReflectionView: View {
             }
     }
 
+    // MARK: - body
     var body: some View {
         ZStack {
             Color("Background").ignoresSafeArea()
@@ -80,6 +82,7 @@ struct CardReflectionView: View {
         .preferredColorScheme(.dark)
     }
 
+    // MARK: - gloss
     var gloss1: some View {
         Image("Gloss 1")
             .resizable()

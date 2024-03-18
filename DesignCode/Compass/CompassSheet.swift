@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CompassSheet: View {
+
+    // MARK: - body
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 20) {
@@ -39,6 +41,7 @@ struct CompassSheet: View {
     }
 }
 
+// MARK: - arrow
 var arrow: some View {
     ZStack {
         Circle().strokeBorder(.primary.opacity(0.4), style: StrokeStyle(lineWidth: 5, dash: [1, 2]))

@@ -10,6 +10,11 @@
 		FD7F43DD2BA86A4F00468221 /* PinterestGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43DC2BA86A4F00468221 /* PinterestGridView.swift */; };
 		FD7F43DF2BA8724500468221 /* PinterestFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43DE2BA8724500468221 /* PinterestFeedView.swift */; };
 		FD7F43E12BA8767E00468221 /* PinterestGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43E02BA8767E00468221 /* PinterestGridItem.swift */; };
+		FD7F43E62BA8C30C00468221 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43E52BA8C30C00468221 /* RatingView.swift */; };
+		FD7F43E92BA8C39700468221 /* ChartValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43E82BA8C39700468221 /* ChartValue.swift */; };
+		FD7F43EC2BA8C4D400468221 /* HexagonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43EB2BA8C4D400468221 /* HexagonShape.swift */; };
+		FD7F43EF2BA8C5BB00468221 /* RadialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43EE2BA8C5BB00468221 /* RadialLayout.swift */; };
+		FD7F43F12BA8C5D200468221 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43F02BA8C5D200468221 /* CustomLayout.swift */; };
 		FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */; };
 		FDB0D0FE2BA4818200DFC06D /* CompassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */; };
 		FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */; };
@@ -36,6 +41,11 @@
 		FD7F43DC2BA86A4F00468221 /* PinterestGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestGridView.swift; sourceTree = "<group>"; };
 		FD7F43DE2BA8724500468221 /* PinterestFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestFeedView.swift; sourceTree = "<group>"; };
 		FD7F43E02BA8767E00468221 /* PinterestGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestGridItem.swift; sourceTree = "<group>"; };
+		FD7F43E52BA8C30C00468221 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		FD7F43E82BA8C39700468221 /* ChartValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartValue.swift; sourceTree = "<group>"; };
+		FD7F43EB2BA8C4D400468221 /* HexagonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonShape.swift; sourceTree = "<group>"; };
+		FD7F43EE2BA8C5BB00468221 /* RadialLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayout.swift; sourceTree = "<group>"; };
+		FD7F43F02BA8C5D200468221 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassSheet.swift; sourceTree = "<group>"; };
 		FDDD3B002B9D952C005D410F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +90,52 @@
 			path = PinterestGrid;
 			sourceTree = "<group>";
 		};
+		FD7F43E32BA8822F00468221 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD7F43EA2BA8C4BA00468221 /* Card */,
+				FD7F43E72BA8C38500468221 /* Charts */,
+				FD7F43ED2BA8C5A500468221 /* Layouts */,
+				FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */,
+				FDDD3B252BA051CB005D410F /* DetailView.swift */,
+				FDDD3B292BA099FE005D410F /* CardReflectionView.swift */,
+				FDDD3B212B9F4FF7005D410F /* GridView.swift */,
+				FDDD3B1D2B9F1754005D410F /* MenuView.swift */,
+				FDDD3B1B2B9F14B6005D410F /* MessageView.swift */,
+				FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */,
+				FD7F43E52BA8C30C00468221 /* RatingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD7F43E72BA8C38500468221 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				FD7F43E82BA8C39700468221 /* ChartValue.swift */,
+				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		FD7F43EA2BA8C4BA00468221 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FDDD3B232BA036F1005D410F /* CardView.swift */,
+				FD7F43EB2BA8C4D400468221 /* HexagonShape.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		FD7F43ED2BA8C5A500468221 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */,
+				FD7F43F02BA8C5D200468221 /* CustomLayout.swift */,
+				FD7F43EE2BA8C5BB00468221 /* RadialLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
 		FDB0D0FF2BA4A75700DFC06D /* Compass */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,22 +166,13 @@
 		FDDD3B022B9D952C005D410F /* DesignCode */ = {
 			isa = PBXGroup;
 			children = (
-				FD7F43DB2BA86A2600468221 /* PinterestGrid */,
 				FDB0D0FF2BA4A75700DFC06D /* Compass */,
-				FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */,
-				FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */,
+				FD7F43DB2BA86A2600468221 /* PinterestGrid */,
+				FD7F43E32BA8822F00468221 /* Views */,
+				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B172B9F0C6B005D410F /* Data.swift */,
 				FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */,
-				FDDD3B252BA051CB005D410F /* DetailView.swift */,
-				FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */,
-				FDDD3B292BA099FE005D410F /* CardReflectionView.swift */,
-				FDDD3B232BA036F1005D410F /* CardView.swift */,
-				FDDD3B052B9D952C005D410F /* ContentView.swift */,
-				FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */,
-				FDDD3B212B9F4FF7005D410F /* GridView.swift */,
-				FDDD3B1B2B9F14B6005D410F /* MessageView.swift */,
-				FDDD3B1D2B9F1754005D410F /* MenuView.swift */,
-				FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */,
+				FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */,
 				FDDD3B072B9D952F005D410F /* Assets.xcassets */,
 				FDDD3B092B9D952F005D410F /* Preview Content */,
 			);
@@ -210,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7F43EC2BA8C4D400468221 /* HexagonShape.swift in Sources */,
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
 				FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */,
 				FDB0D0FE2BA4818200DFC06D /* CompassSheet.swift in Sources */,
@@ -221,6 +269,8 @@
 				FD7F43DF2BA8724500468221 /* PinterestFeedView.swift in Sources */,
 				FDDD3B262BA051CB005D410F /* DetailView.swift in Sources */,
 				FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */,
+				FD7F43EF2BA8C5BB00468221 /* RadialLayout.swift in Sources */,
+				FD7F43E62BA8C30C00468221 /* RatingView.swift in Sources */,
 				FDDD3B142B9EEB44005D410F /* NavigationStackView.swift in Sources */,
 				FDDD3B2C2BA0B238005D410F /* ActionButtonView.swift in Sources */,
 				FDDD3B202B9F3E1F005D410F /* ChartView.swift in Sources */,
@@ -228,8 +278,10 @@
 				FDDD3B182B9F0C6B005D410F /* Data.swift in Sources */,
 				FD7F43DD2BA86A4F00468221 /* PinterestGridView.swift in Sources */,
 				FDDD3B302BA18723005D410F /* CompassView.swift in Sources */,
+				FD7F43E92BA8C39700468221 /* ChartValue.swift in Sources */,
 				FDDD3B322BA1A9BA005D410F /* CircleLabelView.swift in Sources */,
 				FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */,
+				FD7F43F12BA8C5D200468221 /* CustomLayout.swift in Sources */,
 				FDDD3B2A2BA099FE005D410F /* CardReflectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
