@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD7F43DD2BA86A4F00468221 /* PinterestGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43DC2BA86A4F00468221 /* PinterestGridView.swift */; };
+		FD7F43DF2BA8724500468221 /* PinterestFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43DE2BA8724500468221 /* PinterestFeedView.swift */; };
+		FD7F43E12BA8767E00468221 /* PinterestGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43E02BA8767E00468221 /* PinterestGridItem.swift */; };
 		FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */; };
 		FDB0D0FE2BA4818200DFC06D /* CompassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */; };
 		FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD7F43DC2BA86A4F00468221 /* PinterestGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestGridView.swift; sourceTree = "<group>"; };
+		FD7F43DE2BA8724500468221 /* PinterestFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestFeedView.swift; sourceTree = "<group>"; };
+		FD7F43E02BA8767E00468221 /* PinterestGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestGridItem.swift; sourceTree = "<group>"; };
 		FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassSheet.swift; sourceTree = "<group>"; };
 		FDDD3B002B9D952C005D410F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD7F43DB2BA86A2600468221 /* PinterestGrid */ = {
+			isa = PBXGroup;
+			children = (
+				FD7F43E02BA8767E00468221 /* PinterestGridItem.swift */,
+				FD7F43DC2BA86A4F00468221 /* PinterestGridView.swift */,
+				FD7F43DE2BA8724500468221 /* PinterestFeedView.swift */,
+			);
+			path = PinterestGrid;
+			sourceTree = "<group>";
+		};
 		FDB0D0FF2BA4A75700DFC06D /* Compass */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +110,7 @@
 		FDDD3B022B9D952C005D410F /* DesignCode */ = {
 			isa = PBXGroup;
 			children = (
+				FD7F43DB2BA86A2600468221 /* PinterestGrid */,
 				FDB0D0FF2BA4A75700DFC06D /* Compass */,
 				FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */,
 				FDDD3B2D2BA16D5C005D410F /* MotionManager.swift */,
@@ -196,10 +213,12 @@
 				FDDD3B062B9D952C005D410F /* ContentView.swift in Sources */,
 				FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */,
 				FDB0D0FE2BA4818200DFC06D /* CompassSheet.swift in Sources */,
+				FD7F43E12BA8767E00468221 /* PinterestGridItem.swift in Sources */,
 				FDDD3B2E2BA16D5C005D410F /* MotionManager.swift in Sources */,
 				FDDD3B242BA036F1005D410F /* CardView.swift in Sources */,
 				FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */,
 				FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */,
+				FD7F43DF2BA8724500468221 /* PinterestFeedView.swift in Sources */,
 				FDDD3B262BA051CB005D410F /* DetailView.swift in Sources */,
 				FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */,
 				FDDD3B142B9EEB44005D410F /* NavigationStackView.swift in Sources */,
@@ -207,6 +226,7 @@
 				FDDD3B202B9F3E1F005D410F /* ChartView.swift in Sources */,
 				FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */,
 				FDDD3B182B9F0C6B005D410F /* Data.swift in Sources */,
+				FD7F43DD2BA86A4F00468221 /* PinterestGridView.swift in Sources */,
 				FDDD3B302BA18723005D410F /* CompassView.swift in Sources */,
 				FDDD3B322BA1A9BA005D410F /* CircleLabelView.swift in Sources */,
 				FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */,
