@@ -7,7 +7,7 @@
 
 import CoreMotion
 
-class MotionManager: ObservableObject {
+final class MotionManager: ObservableObject {
     @Published var pitch: Double = 0.0
     @Published var roll: Double = 0.0
     @Published var rotation: Double = 0.0
@@ -16,6 +16,10 @@ class MotionManager: ObservableObject {
 
     init() {
         motion = CMMotionManager()
+        setupMotion()
+    }
+
+    func setupMotion() {
         motion.deviceMotionUpdateInterval = 1/60
         motion.startDeviceMotionUpdates(to: .main) { motionData, error in
             guard error == nil else { return }

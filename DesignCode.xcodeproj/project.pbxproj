@@ -15,6 +15,7 @@
 		FD7F43EC2BA8C4D400468221 /* HexagonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43EB2BA8C4D400468221 /* HexagonShape.swift */; };
 		FD7F43EF2BA8C5BB00468221 /* RadialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43EE2BA8C5BB00468221 /* RadialLayout.swift */; };
 		FD7F43F12BA8C5D200468221 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43F02BA8C5D200468221 /* CustomLayout.swift */; };
+		FD7F43F62BA9B3EC00468221 /* RatingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F43F52BA9B3EC00468221 /* RatingData.swift */; };
 		FDB0D0FC2BA3591600DFC06D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */; };
 		FDB0D0FE2BA4818200DFC06D /* CompassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */; };
 		FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B032B9D952C005D410F /* DesignCodeApp.swift */; };
@@ -26,7 +27,7 @@
 		FDDD3B1C2B9F14B6005D410F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1B2B9F14B6005D410F /* MessageView.swift */; };
 		FDDD3B1E2B9F1754005D410F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1D2B9F1754005D410F /* MenuView.swift */; };
 		FDDD3B202B9F3E1F005D410F /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */; };
-		FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B212B9F4FF7005D410F /* GridView.swift */; };
+		FDDD3B222B9F4FF7005D410F /* RatingGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B212B9F4FF7005D410F /* RatingGridView.swift */; };
 		FDDD3B242BA036F1005D410F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B232BA036F1005D410F /* CardView.swift */; };
 		FDDD3B262BA051CB005D410F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B252BA051CB005D410F /* DetailView.swift */; };
 		FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */; };
@@ -46,6 +47,7 @@
 		FD7F43EB2BA8C4D400468221 /* HexagonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonShape.swift; sourceTree = "<group>"; };
 		FD7F43EE2BA8C5BB00468221 /* RadialLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayout.swift; sourceTree = "<group>"; };
 		FD7F43F02BA8C5D200468221 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		FD7F43F52BA9B3EC00468221 /* RatingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingData.swift; sourceTree = "<group>"; };
 		FDB0D0FB2BA3591600DFC06D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDB0D0FD2BA4818200DFC06D /* CompassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassSheet.swift; sourceTree = "<group>"; };
 		FDDD3B002B9D952C005D410F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +60,7 @@
 		FDDD3B1B2B9F14B6005D410F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		FDDD3B1D2B9F1754005D410F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FDDD3B1F2B9F3E1F005D410F /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
-		FDDD3B212B9F4FF7005D410F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		FDDD3B212B9F4FF7005D410F /* RatingGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingGridView.swift; sourceTree = "<group>"; };
 		FDDD3B232BA036F1005D410F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FDDD3B252BA051CB005D410F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FDDD3B272BA06D30005D410F /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
@@ -99,11 +101,9 @@
 				FDDD3B2B2BA0B238005D410F /* ActionButtonView.swift */,
 				FDDD3B252BA051CB005D410F /* DetailView.swift */,
 				FDDD3B292BA099FE005D410F /* CardReflectionView.swift */,
-				FDDD3B212B9F4FF7005D410F /* GridView.swift */,
 				FDDD3B1D2B9F1754005D410F /* MenuView.swift */,
 				FDDD3B1B2B9F14B6005D410F /* MessageView.swift */,
 				FDDD3B132B9EEB44005D410F /* NavigationStackView.swift */,
-				FD7F43E52BA8C30C00468221 /* RatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +134,16 @@
 				FD7F43EE2BA8C5BB00468221 /* RadialLayout.swift */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		FD7F43F42BA9B2F600468221 /* RatingGrid */ = {
+			isa = PBXGroup;
+			children = (
+				FD7F43F52BA9B3EC00468221 /* RatingData.swift */,
+				FD7F43E52BA8C30C00468221 /* RatingView.swift */,
+				FDDD3B212B9F4FF7005D410F /* RatingGridView.swift */,
+			);
+			path = RatingGrid;
 			sourceTree = "<group>";
 		};
 		FDB0D0FF2BA4A75700DFC06D /* Compass */ = {
@@ -168,6 +178,7 @@
 			children = (
 				FDB0D0FF2BA4A75700DFC06D /* Compass */,
 				FD7F43DB2BA86A2600468221 /* PinterestGrid */,
+				FD7F43F42BA9B2F600468221 /* RatingGrid */,
 				FD7F43E32BA8822F00468221 /* Views */,
 				FDDD3B052B9D952C005D410F /* ContentView.swift */,
 				FDDD3B172B9F0C6B005D410F /* Data.swift */,
@@ -268,13 +279,14 @@
 				FDDD3B282BA06D30005D410F /* RadialLayoutView.swift in Sources */,
 				FD7F43DF2BA8724500468221 /* PinterestFeedView.swift in Sources */,
 				FDDD3B262BA051CB005D410F /* DetailView.swift in Sources */,
-				FDDD3B222B9F4FF7005D410F /* GridView.swift in Sources */,
+				FDDD3B222B9F4FF7005D410F /* RatingGridView.swift in Sources */,
 				FD7F43EF2BA8C5BB00468221 /* RadialLayout.swift in Sources */,
 				FD7F43E62BA8C30C00468221 /* RatingView.swift in Sources */,
 				FDDD3B142B9EEB44005D410F /* NavigationStackView.swift in Sources */,
 				FDDD3B2C2BA0B238005D410F /* ActionButtonView.swift in Sources */,
 				FDDD3B202B9F3E1F005D410F /* ChartView.swift in Sources */,
 				FDDD3B042B9D952C005D410F /* DesignCodeApp.swift in Sources */,
+				FD7F43F62BA9B3EC00468221 /* RatingData.swift in Sources */,
 				FDDD3B182B9F0C6B005D410F /* Data.swift in Sources */,
 				FD7F43DD2BA86A4F00468221 /* PinterestGridView.swift in Sources */,
 				FDDD3B302BA18723005D410F /* CompassView.swift in Sources */,

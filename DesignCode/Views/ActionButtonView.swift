@@ -19,7 +19,9 @@ struct ActionButtonView: View {
                 translation = value.translation
             }
             .onEnded { value in
-                withAnimation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7)) {
+                withAnimation(.interactiveSpring(response: 0.6,
+                                                 dampingFraction: 0.7,
+                                                 blendDuration: 0.7)) {
                     translation = .zero
                 }
             }
@@ -46,7 +48,9 @@ struct ActionButtonView: View {
                     circle.frame(width: 208)
                         .overlay(circle.frame(width: 60))
                         .overlay(circle.frame(width: 80))
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                        .frame(maxWidth: .infinity,
+                               maxHeight: .infinity,
+                               alignment: .bottomTrailing)
                         .offset(x: 60, y: 60)
                         .opacity(show ? 1 : 0)
                         .scaleEffect(show ? 1 : 0.8, anchor: .bottomTrailing)
@@ -54,7 +58,8 @@ struct ActionButtonView: View {
                 )
                 .offset(y: -29)
                 .onTapGesture {
-                    withAnimation(.spring(response: 0.8, dampingFraction: 0.6)) {
+                    withAnimation(.spring(response: 0.8,
+                                          dampingFraction: 0.6)) {
                         show.toggle()
                     }
                 }
@@ -68,9 +73,17 @@ struct ActionButtonView: View {
     // MARK: - motion
     var motion: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 50).stroke(.linearGradient(colors: [.white.opacity(0.2), .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) + 1, y: abs(manager.roll) + 1)))
-            LinearGradient(colors: [.clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) + 1, y: abs(manager.roll) + 1))
-            LinearGradient(colors: [Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))], startPoint: .topLeading, endPoint: .bottomTrailing)
+            RoundedRectangle(cornerRadius: 50).stroke(.linearGradient(colors: [.white.opacity(0.2), .white.opacity(0.5), .clear],
+                                                                      startPoint: .topLeading,
+                                                                      endPoint: UnitPoint(x: abs(manager.roll) + 1,
+                                                                                          y: abs(manager.roll) + 1)))
+            LinearGradient(colors: [.clear, .white.opacity(0.5), .clear],
+                           startPoint: .topLeading,
+                           endPoint: UnitPoint(x: abs(manager.roll) + 1,
+                                               y: abs(manager.roll) + 1))
+            LinearGradient(colors: [Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))],
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing)
                 .blendMode(.softLight)
         }
         .cornerRadius(50)
@@ -79,7 +92,9 @@ struct ActionButtonView: View {
 
     // MARK: - elements
     var circle: some View {
-        Circle().stroke().fill(LinearGradient(colors: [.white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
+        Circle().stroke().fill(LinearGradient(colors: [.white.opacity(0.5), .clear],
+                                              startPoint: .topLeading,
+                                              endPoint: .bottomTrailing))
     }
 
     var icons: some View {
@@ -101,7 +116,9 @@ struct ActionButtonView: View {
             .scaleEffect(show ? 1 : 0.5)
         }
         .foregroundColor(.white)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+        .frame(maxWidth: .infinity,
+               maxHeight: .infinity,
+               alignment: .bottomTrailing)
     }
 
     var canvas: some View {
@@ -111,7 +128,8 @@ struct ActionButtonView: View {
             context.drawLayer { ctx in
                 for index in 1...10 {
                     if let symbol = ctx.resolveSymbol(id: index) {
-                        ctx.draw(symbol, at: CGPoint(x: size.width - 44, y: size.height - 44))
+                        ctx.draw(symbol, at: CGPoint(x: size.width - 44,
+                                                     y: size.height - 44))
                     }
                 }
             }

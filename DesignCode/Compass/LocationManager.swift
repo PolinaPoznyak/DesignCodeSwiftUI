@@ -7,7 +7,7 @@
 
 import CoreLocation
 
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     @Published var degrees: Double = 0
     @Published var location: CLLocationCoordinate2D?

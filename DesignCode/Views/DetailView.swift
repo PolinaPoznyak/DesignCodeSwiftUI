@@ -21,17 +21,17 @@ struct DetailView: View {
                 HStack(alignment: .top, spacing: 20) {
                     VStack {
                         ChartView()
-                        GridView()
+                        RatingGridView()
                     }
                     VStack {
                         ChartView()
-                        GridView()
+                        RatingGridView()
                     }
                 }
                 VStack {
                     ChartView()
                     CardView()
-                    GridView()
+                    RatingGridView()
                 }
             }
         }

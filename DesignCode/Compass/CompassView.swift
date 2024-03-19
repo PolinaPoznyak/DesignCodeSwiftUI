@@ -12,7 +12,7 @@ struct CompassView: View {
     @State var location: CGPoint = .zero
     @State var isDragging = false
     @State var show = false
-    @ObservedObject var locationManager = LocationManager()
+    @EnvironmentObject var locationManager: LocationManager
 
     // MARK: - gesture
     var drag: some Gesture {
@@ -253,4 +253,5 @@ struct CompassView: View {
 
 #Preview {
     CompassView()
+        .environmentObject(LocationManager())
 }

@@ -13,7 +13,7 @@ struct ChartValue: Identifiable {
     var value: Double
 }
 
-let data = [
+let chartData = [
     ChartValue(day: "Jun 1", value: 200),
     ChartValue(day: "Jun 2", value: 96),
     ChartValue(day: "Jun 3", value: 312),
@@ -21,7 +21,7 @@ let data = [
     ChartValue(day: "Jun 5", value: 505),
 ]
 
-let data2 = [
+let chartData2 = [
     ChartValue(day: "Jun 1", value: 151),
     ChartValue(day: "Jun 2", value: 192),
     ChartValue(day: "Jun 3", value: 176),

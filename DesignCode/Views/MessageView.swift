@@ -70,14 +70,16 @@ struct MessageView: View {
             stroke
         )
         .shadow(color: .black.opacity(0.3), radius: 20, y: 20)
-        .frame(maxWidth: 500)
+        .frame(maxWidth: .infinity)
     }
 
     // MARK: - stroke
     var stroke: some View {
         RoundedRectangle(cornerRadius: 10)
             .stroke()
-            .foregroundStyle(.linearGradient(colors: [.white.opacity(0.5), .clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
+            .foregroundStyle(.linearGradient(colors: [.white.opacity(0.5), .clear, .white.opacity(0.5), .clear],
+                                             startPoint: .topLeading,
+                                             endPoint: .bottomTrailing))
     }
 }
 
